@@ -1,0 +1,50 @@
+/* --- Main App Styling --- */
+.stApp {
+    /* Sets a clean, modern background */
+    background-color: #F0F2F6;
+}
+
+/* --- Chat Message Styling --- */
+[data-testid="stChatMessage"] {
+    /* Adds rounded corners and shadows for a "card" effect */
+    border-radius: 10px;
+    padding: 12px 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* --- Assistant Chat Bubble --- */
+[data-testid="stChatMessage"]:has(div[data-testid="chatAvatarIcon-assistant"]) {
+    background-color: #FFFFFF;
+    color: #333;
+}
+
+/* --- User Chat Bubble --- */
+[data-testid="stChatMessage"]:has(div[data-testid="chatAvatarIcon-user"]) {
+    background-color: #E1F5FE; /* Light blue */
+    color: #01579B;
+}
+
+/* --- Chat Input Styling --- */
+[data-testid="stChatInput"] {
+    background-color: #FFFFFF;
+    border-top: 1px solid #DDDDDD;
+}
+
+/* --- Sidebar Styling --- */
+ {
+    background-color: #FFFFFF;
+    border-right: 1px solid #DDDDDD;
+}
+
+/* --- Custom Button (e.g., in sidebar) --- */
+.stButton > button {
+    border-radius: 8px;
+    border: 1px solid #007BFF;
+    background-color: #007BFF;
+    color: white;
+}
+.stButton > button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
