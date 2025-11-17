@@ -209,3 +209,4 @@ __marimo__/
 .deepeval
 .env.local
 tests/.deepeval
+tests/logs/*
